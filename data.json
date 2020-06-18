@@ -1,0 +1,21 @@
+[
+        {
+                "string": "bibil",
+                "integer": "110",
+                "float": "5,5",
+                "date": "2020-05-16"
+        },
+        {
+                "string": "ana",
+                "integer": "3",
+                "float": "1,5",
+                "date": "2020-05-29"
+        },
+        {
+                "string": "ina",
+                "integer": "-3",
+                "float": "5,4",
+                "date": "2020-05-22",
+                "boolean": "True"
+        }
+]

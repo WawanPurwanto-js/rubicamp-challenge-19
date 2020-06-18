@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Helo, Edit</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <h1 class="container">Edit</h1>
+    <br>
+    <form action="" method="POST">
+        <div class="container">
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label">
+                    ID
+                </label>
+                <div class="row col-sm-6">
+                    <input class="form-control" type="text" placeholder="ID" id="id" name="id"
+                        value="<%= Number(id) + 1%>" />
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label">
+                    String
+                </label>
+                <div class="row col-sm-6">
+                    <input class="form-control" type="text" id="string" name="string" value="<%= item.string %>"
+                        placeholder="String" />
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label">
+                    Integer
+                </label>
+                <div class="row col-sm-6">
+                    <input class="form-control" type="number" id="integer" name="integer" value="<%= item.integer%>"
+                        placeholder="Integer" />
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label">
+                    Float
+                </label>
+                <div class="row col-sm-6">
+                    <input class="form-control" type="text" id="float" name="float" value="<%= item.float%>"
+                        placeholder="Float" />
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label">
+                    Date
+                </label>
+                <div class="row col-sm-6">
+                    <input class="form-control" type="date" id="date" name="date" value="<%= item.date%>"
+                        placeholder="date" />
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label">
+                    Boolean
+                </label>
+                <div class="row col-sm-6">
+                    <select class="form-control" id="boolean" placeholder="--Choose the boolean--">
+                        <option> True</option>
+                        <option> False </option>
+                    </select>
+
+                </div>
+
+            </div>
+        </div>
+        <br>
+
+
+        <div class="container">
+            <div class="form-group row">
+                <button class="btn btn-primary" type="submit"> SAVE</button>
+                <a class="btn btn-primary" href="/" role="button">BACK</a>
+            </div>
+
+        </div>
+
+    </form>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
